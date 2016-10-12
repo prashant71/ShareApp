@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    tools:context="com.prashant.shareapp.MainActivity">
+
+    <TextView
+        android:text="@string/headingtext"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_heading"
+        android:typeface="sans"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:layout_below="@id/txt_heading"
+        android:text="Share Image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_background"
+        android:id="@+id/btn_share_image"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:onClick="shareImage"/>
+    <Button
+        android:text="Share Video"
+        android:layout_below="@id/btn_share_image"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_background"
+        android:id="@+id/btn_share_video"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:onClick="shareVideo"/>
+    <Button
+        android:text="Share Video Link"
+        android:layout_below="@id/btn_share_video"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_background"
+        android:id="@+id/btn_share_videolink"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:onClick="shareVideoLink"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/devby" />
+
+        <TextView
+            android:id="@+id/text_developedby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="@string/by" />
+    </LinearLayout>
+
+</RelativeLayout>
