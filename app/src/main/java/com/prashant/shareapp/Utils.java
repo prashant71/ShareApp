@@ -13,7 +13,7 @@ import android.provider.MediaStore;
 import java.net.URISyntaxException;
 
 /**
- * Created by ADMIN on 10/12/2016.
+ * Created by PRASHANT KOLI on 10/12/2016.
  */
 
 public class Utils {
