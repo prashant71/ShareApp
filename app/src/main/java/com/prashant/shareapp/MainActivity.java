@@ -61,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
             else if (requestCode == REQUEST_PICK_VIDEO) {
                 shareSelectVideo(data);
             }
-        }
-
-    }
+        }    }
 
     private void shareSelectImage(Intent data){
 //        String imagePath=new Utils().getFilePath(this,data.getData());
