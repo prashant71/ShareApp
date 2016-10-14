@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
+
 public class MainActivity extends AppCompatActivity {
     private static int REQUEST_PICK_IMAGE = 1111;
     private static int REQUEST_PICK_VIDEO = 2222;
